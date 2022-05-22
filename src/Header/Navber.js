@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navber.css'
 
 const Navber = () => {
     return (
-        <div className="navbar  text-white bg-black ">
+        <div className="navbar navber-bg   text-white  ">
   <div className="navbar-start">
     <div className="dropdown ">
       <label tabindex="0" className="btn btn-ghost lg:hidden">

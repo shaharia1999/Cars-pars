@@ -1,0 +1,123 @@
+#theam{
+    width: 100%;
+    height:auto;
+    background-image:url('../images/testi-bg\ \(1\).jpg') ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  
+  }
+  .theam-container{
+    width: 1170px;
+    height: auto;
+    margin-top:100px;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 50px;
+    background-color:;
+   
+  }
+  
+  .theam-row{
+    width: 100%;
+    height:auto;
+    align-items: center;
+    justify-content:center;
+    flex-flow: wrap;
+    overflow: hidden;
+    padding-bottom: 100px;
+  
+    
+  }
+  .them-img-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .theam-img{
+    width: 50px;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+  
+  }
+  .them-img-box1 {
+    width: 80PX;
+  }
+  
+  .theam-img img{
+    width: 50px inherit!important;
+  
+  }
+  .theam-p{
+    text-align: center;
+    margin-top: 5%;
+   
+    
+  }
+  .theam-p p{
+    font-style: italic;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+  }
+  .them-img{
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 3%;
+    
+  }
+  .them-img-img{
+    
+    overflow: hidden;
+   
+   
+  }
+  .them-img-img img{
+    width: 100px;
+    clip-path: circle();
+    overflow: hidden!important;
+    float: right;
+    border: none!important;
+  
+  }/*.owl-carousel .owl-item img {
+    display: block;
+    width:80px;
+  }*/
+  .them-img-img-title{
+    margin-left: 2%;
+    align-items: center;
+     justify-content: center;
+  }
+  .them-img-img-title p{
+    color: #E8E8E8;
+  
+  
+  }
+  span.them-img-img-title {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: arial;
+  }
+  .theam-border {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+  
+  }
+  .them-border-bot{
+    width: 100px;
+    border-bottom: 4px solid #F71854;
+  }
+  

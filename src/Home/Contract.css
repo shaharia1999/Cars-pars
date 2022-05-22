@@ -1,0 +1,114 @@
+#contract{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: url('../images/dark-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top:30px;
+}
+.contract-container{
+width: 1170px;
+height: auto;
+margin-top:80px;
+display: flex;
+justify-content: space-between;
+overflow: hidden;
+padding-bottom: 70px;
+background-color:;
+
+}
+.contract-row1{
+width: 45%;
+height: auto;
+padding-top:20px;
+padding-left: 40px;
+}
+.contract-row1 img{
+width: 100%;
+height: 90%;
+}
+.contract-row2{
+padding-top:20px;
+padding-left: 40px;
+padding-right: 40px;
+width:45%;
+height: auto;
+}
+p.contract-title {
+font-size: 18px;
+color: #CE1446;
+font-family: arial;
+font-weight: 600;
+padding-top: 10px;
+}
+.contract-row2 h3{
+color:white;
+font-size:2.5rem;
+font-family: arial;
+font-weight: 600;
+}
+.contract-span {
+width: 100px;
+border-top: 4px solid #CE1446;
+}
+p.contract-discription {
+font-size:15px;
+padding-top: 20px;
+color: white;
+}
+form{
+width: 100%;
+padding-right: 20px;
+
+}.name-email{
+display: flex;
+justify-content: space-between;
+}
+.name-email input {
+color:black;
+width: 48%;
+height:50px;
+border: none;
+overflow: hidden;
+}
+.name-email:nth-child(2){
+margin-top:20px;
+}
+::-webkit-input-placeholder{
+  padding-left: 15px;
+ color: black;
+ font-size: 15px;
+ font-weight: 200;
+}
+textarea{
+margin-top: 40px;
+width: 100%;
+overflow: hidden;}
+.contract-btn{
+margin-top:10% ;
+margin-bottom: 15%;
+width: 200px;
+height: 50px;
+color: WHITE;
+BACKGROUND-COLOR: #CE1446;
+BORDER: NONE;
+OVERFLOW: HIDDEN;
+}
+@media(max-width:940px){
+.contract-container{
+  display: flex;
+  flex-flow: wrap;
+}
+.contract-row1{
+  width: 100%;
+  padding-right: 40px;
+}
+.contract-row2{
+  width: 100%;
+}
+}
