@@ -1,10 +1,14 @@
+import { Route, Routes } from "react-router-dom";
 import Home from "./HomeCompunant/Home";
 
  
 function App() {
   return (
     <div>
-      <Home></Home>
+      
+      <Routes>
+        <Route path={'/'} element={<Home></Home>}></Route>
+      </Routes>
    
 
     </div>
