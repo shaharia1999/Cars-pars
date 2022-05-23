@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './ReastPass.css'
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
-import { async } from '@firebase/util';
+// import auth from '../../firebase.init';
 import { useRef } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import auth from '../firebase.init';
 
 const ReastPass = () => {
     const notify = () => toast("Set Your New Password!");
@@ -44,8 +44,6 @@ const ReastPass = () => {
               }
     
     }
-  
-      
 
     return (
         <div className='reast mt-5'>
@@ -60,13 +58,12 @@ const ReastPass = () => {
     </Form.Text>
   </Form.Group>
 
-  <Button variant="primary" type="submit" onClick={rest}>
+  <Button className="login-button" variant="primary" type="submit" onClick={rest}>
      Reast Your PassWord
   </Button>
   <p className='text-danger'>{errors}</p>
   
-</Form>
-            
+</Form> 
         </div>
     );
 };

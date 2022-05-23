@@ -4,9 +4,12 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import { Link, useNavigate } from 'react-router-dom';
 // import auth from './../../firebase.init';
 import auth from '../firebase.init';
-import googleImg from '../images2/sing-in-img/google-signin-button-1024x260.png';
+// import googleImg from '../images2/sing-in-img/google-signin-button-1024x260.png';
+import googleImg from '../images/google-signin-button-1024x260.png'
 import {  useLocation } from 'react-router-dom';
-import axios from 'axios';
+import './Login.css'
+import Usetoken from '../Usetoken';
+// import axios from 'axios';
 
 
 const Login =() => {
@@ -37,9 +40,9 @@ let from = location.state?.from?.pathname || "/";
         return;
         };
         await signInWithEmailAndPassword(email, password);
-        const{data}=await axios.post('http://localhost:5000/login',{email});
-        console.log(data);
-         localStorage.setItem('accessTowken',data);
+        // const{data}=await axios.post('http://localhost:5000/login',{email});
+        // console.log(data);
+        //  localStorage.setItem('accessTowken',data);
       };
       if( user){
         navigate(from, { replace: true });
@@ -53,11 +56,12 @@ let from = location.state?.from?.pathname || "/";
   if(googleuser){
     navigate('/');
   }
+  const [token]=Usetoken(user || googleuser);
   
 
     return (
         <div className='mt-5 mb-5'>
-            <h1 className='mt-5 text-center'>This is the Login page</h1>
+            <h1 className='mt-5 text-center text-4xl'>This is the Login page</h1>
             <Form onSubmit={fromControl} className='w-50 mx-auto'>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
@@ -72,7 +76,7 @@ let from = location.state?.from?.pathname || "/";
     <Form.Control type="password" placeholder="Password" />
   </Form.Group>
 
-  <Button variant="primary" type="submit">
+  <Button className='login-button' variant="primary" type="submit">
     Login
   </Button>
   <h2 className='text-danger'>{errors}</h2>

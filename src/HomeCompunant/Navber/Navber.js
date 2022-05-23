@@ -41,7 +41,7 @@ const Navber = () => {
     <div className='header'>
     <Navbar bg="dark" expand="lg">
 <Container fluid>
-<h1 ><Link className='text-white text-decoration-none' to="/"><span className='text-danger'>W</span>are<span className='text-danger'>h</span>ouse</Link></h1> 
+<h1 ><Link className='text-white text-decoration-none' to="/"><span className='text-danger text-4xl'>W</span>olge<span className='text-danger'>h</span>Car</Link></h1> 
 <Navbar.Toggle aria-controls="navbarScroll" />
 <Navbar.Collapse id="navbarScroll">
 <Nav
@@ -64,7 +64,7 @@ navbarScroll
 
     }
     {
-      user?.uid?<li><CustomLink to='/myitem'>My item</CustomLink></li> :
+      user?.uid?<li><CustomLink to='/myOrder'>My Order</CustomLink></li> :
       <></>
 
     }
