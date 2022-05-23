@@ -6,7 +6,7 @@ const FooterEnd = () => {
         <div>
              <div className="footer-nevber p-5">
   <div className="footer-nav-contant"><p>
-    © 2021 All Rights Reserved. Developed By RSTheme</p></div>
+    © 2022 All Rights Reserved. Developed By Shaharia</p></div>
   <div class=" footer-nav-item">
           <ul>
               <li><a href="">HOME</a></li>

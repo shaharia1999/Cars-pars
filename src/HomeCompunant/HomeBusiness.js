@@ -14,7 +14,7 @@ const HomeBusiness = () => {
                     <ArchiveIcon className="h-32 w-36 text-rose-500 "/>
             </h1>
                     <div className='flex w-72 items-center justify-center'>
-                    <h1 className='text-4xl bold text-center'><CountUp end={325} duration={15} /></h1>
+                    <h1 className='text-4xl bold text-center'><CountUp end={870} duration={15} /></h1>
                     <h1 className='text-4xl bold text-center'>
                     <PlusIcon  className="h-10 w-10 text-rose-700"/>
                     </h1>
@@ -30,7 +30,7 @@ const HomeBusiness = () => {
                     <BriefcaseIcon className="h-32 w-36 text-rose-500"/>
             </h1>
                     <div className='flex w-72 items-center justify-center'>
-                    <h1 className='text-4xl bold text-center'><CountUp end={405} duration={15} /></h1>
+                    <h1 className='text-4xl bold text-center'><CountUp end={1000} duration={15} /></h1>
                     <h1 className='text-4xl bold text-center'>
                     <PlusIcon  className="h-10 w-10 text-rose-700"/>
                     </h1>
@@ -46,7 +46,7 @@ const HomeBusiness = () => {
                     <TableIcon className="h-32 w-36 text-rose-500"/>
             </h1>
                     <div className='flex w-72 items-center justify-center'>
-                    <h1 className='text-4xl bold text-center'><CountUp end={257} duration={15} /></h1>
+                    <h1 className='text-4xl bold text-center'><CountUp end={1200} duration={15} /></h1>
                     <h1 className='text-4xl bold text-center'>
                     <PlusIcon  className="h-10 w-10 text-rose-700"/>
                     </h1>
