@@ -36,7 +36,7 @@ const Footer = () => {
                         <div className='footer-contract-link'>
                         <div className="overly-address">
                             <i><LocationMarkerIcon className="h-10 w-10 text-rose-700"/></i>
-                                                <h6>Address <br/><p>05 kandi BR .Brahmanbaria</p><br/></h6>
+                                                <h6>Address <br/><p>05 Kandhi BR .Brahmanbaria</p><br/></h6>
                             </div>
                             <div className="overly-email">
                                 <i > <MailIcon className="h-10 w-10 text-rose-700"/></i>
