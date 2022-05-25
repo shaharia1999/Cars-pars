@@ -4,11 +4,11 @@ import { toast } from 'react-toastify';
 
 
 const PerUsr = ({u}) => {
-    console.log(u);
+   
     const _id=u?._id;
     const email=u?.email;
     const admin=u?.role;
-    console.log(admin)
+
     
     
     const makeAdmin=()=>{
