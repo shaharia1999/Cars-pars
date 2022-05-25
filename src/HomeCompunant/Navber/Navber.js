@@ -59,11 +59,7 @@ navbarScroll
       <></>
 
     }
-    {
-      user?.uid?<li><CustomLink to='/myOrder'>My Order</CustomLink></li> :
-      <></>
-
-    }
+   
    
     
     
