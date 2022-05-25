@@ -46,7 +46,7 @@ const DashBord = () => {
       {admin?<li><Link to='AddItem'>Add Item</Link></li>:<></>}
       {admin?  <li><Link to='manageItem'>Manage Item</Link></li>:  <li><Link to='UserOrder'>MY Orders</Link></li>}
       {admin?<li><Link to='user'>Users</Link></li>:<></>}
-      <li><a>Profile</a></li>
+      <li><Link to='profile'>Profile</Link></li>
     
 
     </ul>
