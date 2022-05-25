@@ -33,7 +33,7 @@ const DashBord = () => {
     return (
         <div class="drawer drawer-mobile">
   <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col items-center justify-center ">
+  <div class="drawer-content ">
  
   <Outlet/>
     <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
@@ -46,9 +46,9 @@ const DashBord = () => {
       {admin?<li><Link to='AddItem'>Add Item</Link></li>:<></>}
       {admin?  <li><Link to='manageItem'>Manage Item</Link></li>:  <li><Link to='UserOrder'>MY Orders</Link></li>}
       {admin?<li><Link to='user'>Users</Link></li>:<></>}
+      {admin?<li><Link to='manageOrder'>Manage ALL Orsers</Link></li>:<></>}
       <li><Link to='profile'>Profile</Link></li>
     
-
     </ul>
   
   </div>

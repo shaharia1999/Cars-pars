@@ -12,6 +12,7 @@ import ManageItem from "./DashBord/ManageItem";
 import Users from "./DashBord/Users";
 import RequirteAuth from "./RequreAuth/RequirteAuth"
 import UserOrder from "./DashBord/UserOrder";
+import ManageAllOrders from "./DashBord/ManageAllOrders";
 
 
  
@@ -34,6 +35,7 @@ function App() {
           <Route path="manageItem" element={<ManageItem/>}></Route>
           <Route path="user"element={<Users/>}></Route>
           <Route path="UserOrder"element={<UserOrder/>}></Route>
+          <Route path="manageOrder"element={<ManageAllOrders/>}></Route>
         </Route>
       </Routes>
       <Footer/>

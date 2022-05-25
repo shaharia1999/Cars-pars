@@ -37,7 +37,7 @@ const UserOrder = () => {
 
       
     return (
-        <div className=' grid grid-cols-1 lg:grid-cols-3 gap-5 pt-72 mt-40 '>
+        <div className=' grid grid-cols-1 lg:grid-cols-3 gap-5 pt-5'>
             {
                  orders.map( item=><PerUserOrder key={item._id} item={item} deleteItem={deleteItem}></PerUserOrder>)
             }

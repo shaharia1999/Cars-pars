@@ -11,14 +11,26 @@ const Users = () => {
   
 
     return (
-        <div className=''>
+        
             
-            {console.log(users)}
-            {
-                users.map(user=><PerUsr key={user._id} u={user}></PerUsr>)
-            }
-
-        </div>
+    <div class="overflow-x-auto">
+  <table class="table w-full">
+  
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Action</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+        {
+            users.map(user=><PerUsr key={user._id} u={user}></PerUsr>)
+        }
+    </tbody>
+  </table>
+</div>
+ 
     );
 };
 

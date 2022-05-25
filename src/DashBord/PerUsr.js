@@ -32,24 +32,16 @@ const PerUsr = ({u}) => {
       
     }
     
-    return (
-        <div>
-            <div className=' grid grid-cols-3 gap-5'>
-                <div className='mr-5'><h1>Email :{u?.email}</h1></div>
-                <div>
-                    {
-                        !admin && <button className='btn' onClick={makeAdmin} >Make Admin</button>
-                    }
-                    {
-                        admin && <button className='btn'  > Admin</button>
-                    }
-                </div>
-                <div><button className='btn mt-2' onClick={Delete}>Remove User</button></div>
-            </div>
-           
-            
-        </div>
-    );
+    return    <tr><td>{u?.email}</td>
+    <td> {
+                    !admin && <button className='btn' onClick={makeAdmin} >Make Admin</button>
+                }
+                {
+                    admin && <button className='btn'  > Admin</button>
+                }</td>
+    <td><button className='btn ' onClick={Delete}>Remove User</button></td>
+  </tr>
+  
 }
 
 
