@@ -22,7 +22,7 @@ const Revew = () => {
       </div>
     </div>
       <div className="theam-p"><p>
-        These guys are awesome! Each time I needed their help, their response was quick and very helpful to us. Also, the theme is very flexible. Five stars from me for everything!
+        These guys are awesome! Each time I needed their help, their response was quick and very helpful to us Also, the theme is very flexible. Five stars from me for everything!
          I truly recommend this theme!!!                        
       </p></div>
       <div className="them-img">
