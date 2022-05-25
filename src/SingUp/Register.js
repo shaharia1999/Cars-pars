@@ -47,7 +47,7 @@ const Register = () => {
 
       };
      
-      if( user){
+      if( token){
         navigate("/login")
     
        
@@ -59,7 +59,7 @@ const Register = () => {
    signInWithGoogle()
   
 };
-if(googleuser){
+if(token){
   //navugate
   navigate("/");
  }

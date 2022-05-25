@@ -59,7 +59,7 @@ navbarScroll
       <></>
 
     }{
-      user?.uid?<li><CustomLink to='/addItems'>Add items</CustomLink></li> :
+      user?.uid?<li><CustomLink to='/dashBord'>Dash bord</CustomLink></li> :
       <></>
 
     }

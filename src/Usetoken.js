@@ -14,8 +14,17 @@ const Usetoken = (user) => {
            },
            body: JSON.stringify(currenUser),
          })
-          .then((response) => response.json())
-          .then((data) => console.log(data));
+          .then(response => response.json())
+          .then(data =>{
+            const jottoken=data.token;
+            localStorage.setItem('accessToken',jottoken)
+            console.log(jottoken)
+            SetToken(jottoken);
+            ;
+           
+          })
+         
+          
         }
       
 

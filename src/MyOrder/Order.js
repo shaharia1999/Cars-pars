@@ -46,18 +46,22 @@ const Order = () => {
       const notify = () => toast("Set Your New Password!");
         e.preventDefault()
        const name=e.target[0].value;
-       const email=e.target[1].value;
-       const address=e.target[2].value;
-       const mobile=e.target[3].value;
-       const MinimumOrder=e.target[4].value;
-       const product={name,email,address,mobile,MinimumOrder}
-        if(quantitylev>MinimumOrder && MinimumOrder>MinimumValue ){
+       const MinimumOrder=e.target[1].value;
+       const price=e.target[2].value;
+       const picture=e.target[3].value;
+       const email=e.target[4].value;
+       const address=e.target[5].value;
+       const mobile=e.target[6].value;
+       const product={name,email,address,mobile,MinimumOrder,price,picture}
+        if(quantitylev>=MinimumOrder && MinimumOrder>=MinimumValue){
           try{
-            const response= await axios.post('http://localhost:5000/products',{product});
+            const response= await axios.post('http://localhost:5000/products',product);
             
             if (response) {
               alert("Order Submit Sucessfull")
+              e.target.reset();
               notify();
+              setError('')
               // toast("Success! Check email for details", { type: "success" });
             } else {
               toast("Something went wrong", { type: "error" });
@@ -67,7 +71,9 @@ const Order = () => {
             console.log(error);
             }
 
-        }else{
+        }
+        
+        else{
           console.log('mia');
           setError(<p>Quantity Higher/lower to abailaable</p>)
           
@@ -107,6 +113,11 @@ const Order = () => {
 <Form.Group className="mb-3" >
 <Form.Label>Price Per Item</Form.Label>
 <Form.Control type="text" placeholder="" defaultValue={Price}
+/>
+</Form.Group>
+<Form.Group className="mb-3" >
+<Form.Label>Picture :</Form.Label>
+<Form.Control type="text" placeholder="" value={ProductPhoto}
 />
 </Form.Group>
 <Form.Group className="mb-3" controlId="formBasicEmail">
