@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -6,16 +6,30 @@ import './Revew.css';
 import img1 from "../images/quote (1).png"
 import img2 from '../images/1(2).jpg'
 import img3 from '../images/2.jpg'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../firebase.init';
 
 const Revew = () => {
+  const user=useAuthState(auth);
+  const [products,setProducts]=useState([])
+  useEffect(()=>{
+    fetch('http://localhost:5000/revew')
+    .then(res=>res.json())
+    .then(data=>{
+      setProducts(data);
+      console.log(products);
+    })
+},[user]);
     return (
-        <div>     
+      
+        <div> 
+            
 <section id="theam">
   <div className="theam-container owl-carousel">
   <OwlCarousel className='owl-theme' items={1} autoplay={true} loop={true} margin={10} 
   >
    
-    <div className="theam-row">
+    {/* <div className="theam-row">
       <div className="them-img-box">
       <div className="theam-img">
         <img src={img1} alt=""/>
@@ -35,10 +49,35 @@ const Revew = () => {
       </div>
       <div className="theam-border">
         <div className="them-border-bot"></div></div>
-    </div>
-  
+    </div> */}
+       {
+         products.map(revew=>
+          <div className="theam-row">
+             <h1 className=' text-4xl text-center text-white py-3'>Revews : {revew?.revew}</h1> 
+          <div className="them-img-box">
+          <div className="theam-img">
+            <img src={img1} alt=""/>
+          </div>
+        </div>
+          <div className="theam-p"><p>
+          {revew?.description}
+            {/* These guys are awesome! Each time I needed their help, their response was quick and very helpful to us Also, the theme is very flexible. Five stars from me for everything!
+             I truly recommend !!                        */}
+          </p></div>
+          <div className="them-img">
+            <div className="them-img-box1">
+            <div className="them-img-img">
+              <img src= {revew?.picture} alt=""/>
+            </div>
+          </div>
+            <div className="them-img-img-title"> <p> <span className="them-img-img-title"> {revew?.name}</span> <br/>CEO,Bring Consalting</p></div>
+          </div>
+          <div className="theam-border">
+            <div className="them-border-bot"></div></div>
+        </div>)
+       }
    
-    <div className="theam-row">
+    {/* <div className="theam-row">
       <div className="them-img-box">
       <div className="theam-img">
         <img src={img1} alt=""/>
@@ -58,7 +97,7 @@ const Revew = () => {
       </div>
       <div className="theam-border">
         <div className="them-border-bot"></div></div>
-    </div>
+    </div> */}
     </OwlCarousel>
     </div>
     

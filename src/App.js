@@ -13,6 +13,7 @@ import Users from "./DashBord/Users";
 import RequirteAuth from "./RequreAuth/RequirteAuth"
 import UserOrder from "./DashBord/UserOrder";
 import ManageAllOrders from "./DashBord/ManageAllOrders";
+import UserRevew from "./DashBord/UserRevew";
 
 
  
@@ -36,6 +37,7 @@ function App() {
           <Route path="user"element={<Users/>}></Route>
           <Route path="UserOrder"element={<UserOrder/>}></Route>
           <Route path="manageOrder"element={<ManageAllOrders/>}></Route>
+          <Route path='UserOrder/revew'element={<UserRevew/>}></Route>
         </Route>
       </Routes>
       <Footer/>

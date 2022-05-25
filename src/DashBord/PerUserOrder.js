@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PerUserOrder = ({item,deleteItem}) => {
     const {name,picture,price,MinimumOrder,_id}=item;
@@ -19,10 +20,10 @@ const PerUserOrder = ({item,deleteItem}) => {
                 Delete 
             </button>
             <button class="btn btn-sucess ml-2" >
-                Revew 
+            <Link to='revew'>Revew</Link>
             </button>
-            <button class="btn btn-danger mt-2" >
-                 Payment 
+            <button class="btn btn-danger mt-2">
+               Payment
             </button>
             </div>
           </div>
