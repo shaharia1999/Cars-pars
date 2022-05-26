@@ -51,7 +51,6 @@ function App() {
           <Route path='UserOrder/revew'element={<UserRevew/>}></Route>
           <Route path='UserOrder/payment/:_id' element={<Payment/>}></Route>
           <Route path='mayProfile' element={<MyProfile/>}></Route>
-
         </Route>
       </Routes>
       <Footer/>

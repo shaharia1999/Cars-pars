@@ -89,10 +89,10 @@ const MyProfile = () => {
         <div class="card-body items-center text-center">
             
           <h2 class="card-title">{''}</h2>
-          <p> name :{pro.name}</p>
+          <p> name :{pro?.name}</p>
           <p>Email :{setEmail}</p>
-          <p> Address :{pro.address}</p>
-          <h2 class="card-title">Phone :{pro.phone}</h2>
+          <p> Address :{pro?.address}</p>
+          <h2 class="card-title">Phone :{pro?.phone}</h2>
           </div>
       
       </div>
