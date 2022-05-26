@@ -55,19 +55,19 @@ const UserRevew = () => {
         <Form onSubmit={handleSubmit} className=' mx-auto w-50'>
     <Form.Group className="mb-3" >
     <Form.Label>My Name : </Form.Label>
-    <Form.Control type="text" placeholder="Enter Name" />
+    <Form.Control type="text" placeholder="Enter Name" required/>
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <label htmlFor="">description</label><br />
-      <textarea name="" id="" cols="50" rows="4"></textarea>
+      <textarea name="" id="" cols="50" rows="4"required></textarea>
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label> My Photo </Form.Label>
-    <Form.Control type="text" placeholder="Url" />
+    <Form.Control type="text" placeholder="Url"required />
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label> REVEW QUANTITY 0 to 5 </Form.Label>
-    <Form.Control type="text" placeholder="Revew" />
+    <Form.Control type="text" placeholder="Revew" required/>
   </Form.Group>
 
 

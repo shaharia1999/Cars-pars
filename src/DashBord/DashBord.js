@@ -46,8 +46,8 @@ const DashBord = () => {
       {admin?<li><Link to='AddItem'>Add Item</Link></li>:<></>}
       {admin?  <li><Link to='manageItem'>Manage Item</Link></li>:  <li><Link to='UserOrder'>MY Orders</Link></li>}
       {admin?<li><Link to='user'>Users</Link></li>:<></>}
-      {admin?<li><Link to='manageOrder'>Manage ALL Orsers</Link></li>:<></>}
-      <li><Link to='profile'>Profile</Link></li>
+      {admin?<li><Link to='manageOrder'>Manage ALL Orsers</Link></li>: <li><Link to='UserOrder/revew'>Add ReveW</Link></li>}
+      <li><Link to='mayProfile'>Profile</Link></li>
     
     </ul>
   

@@ -26,6 +26,9 @@ const ManageItem = () => {
       })
     }
 }
+const revew=(_id)=>{
+
+}
 
   
     return (

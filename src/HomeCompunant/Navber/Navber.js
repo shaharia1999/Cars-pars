@@ -53,7 +53,8 @@ navbarScroll
 </Nav>
 <div className='navber-item'>
     <li><CustomLink to='/'>Home</CustomLink></li>
-    <li><CustomLink to='/blog'>Blog</CustomLink></li>
+    <li><CustomLink to='/Blog'>Blog</CustomLink></li>
+    <li><CustomLink to='/portfoli'>Portfoli</CustomLink></li>
   {
       user?.uid?<li><CustomLink to='/dashBord'>Dashbord</CustomLink></li> :
       <></>

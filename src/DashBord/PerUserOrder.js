@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PerUserOrder = ({item,deleteItem}) => {
+const PerUserOrder = ({item,deleteItem,payment}) => {
     const {name,picture,price,MinimumOrder,_id}=item;
     return (
         <div class="card w-72 bg-base-100 shadow-xl">
@@ -22,8 +22,9 @@ const PerUserOrder = ({item,deleteItem}) => {
             <button class="btn btn-sucess ml-2" >
             <Link to='revew'>Revew</Link>
             </button>
-            <button class="btn btn-danger mt-2">
-               Payment
+            <button class="btn btn-danger mt-2" onClick={()=>payment(_id)}>
+              <Link to={`payment/${_id}`}>Payment</Link>
+           
             </button>
             </div>
           </div>
