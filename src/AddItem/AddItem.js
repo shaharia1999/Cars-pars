@@ -29,7 +29,7 @@ const AddItem = () => {
     // setData(newAreey);
   
 
-    fetch('http://localhost:5000/product', {
+    fetch('https://thawing-brushlands-77698.herokuapp.com/products', {
   method: 'POST',
   body: JSON.stringify(datas
   ),

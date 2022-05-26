@@ -16,7 +16,7 @@ const DashBord = () => {
     useEffect(()=>{
       const email=user?.email;
       if(email){
-        fetch(`http://localhost:5000/admin/${email}`)
+        fetch(`https://thawing-brushlands-77698.herokuapp.com/admin/${email}`)
         .then(res=>res.json())
         .then(data=>setAdmin(data))
         console.log(admin);

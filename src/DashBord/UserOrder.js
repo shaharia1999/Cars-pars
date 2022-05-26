@@ -10,7 +10,7 @@ const UserOrder = () => {
     const email=user?.email;
     const [orders,SetOrders]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/ordersItem')
+        fetch('https://thawing-brushlands-77698.herokuapp.com/ordersItem')
         .then(res=>res.json())
         .then(data=>SetOrders(data));
 
@@ -18,7 +18,7 @@ const UserOrder = () => {
     },[]);
     
     const deleteItem=(_id)=>{
-        const url=`http://localhost:5000/OrdersItem/${_id}`
+        const url=`https://thawing-brushlands-77698.herokuapp.com/OrdersItem/${_id}`
         const prosit=window.confirm("Are You sure You want to Delete the Id")
         if(prosit){
         fetch(url,{

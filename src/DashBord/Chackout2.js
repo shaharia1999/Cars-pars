@@ -15,7 +15,7 @@ const CheckoutForm = ({data,setPayment}) => {
     const email=data?.email;
     const _id=data?._id;
     useEffect(() => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://thawing-brushlands-77698.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers:{
                 'content-type':'application/json'

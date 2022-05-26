@@ -4,7 +4,7 @@ import PerUsr from './PerUsr';
 const Users = () => {
     const [users,setUser]=useState([]);
     useEffect(()=>{
-      fetch('http://localhost:5000/users')
+      fetch('https://thawing-brushlands-77698.herokuapp.com/users')
       .then(res=>res.json())
       .then(data=>setUser(data))
   },[]);

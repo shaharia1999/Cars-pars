@@ -13,7 +13,7 @@ const Revew = () => {
   const user=useAuthState(auth);
   const [products,setProducts]=useState([])
   useEffect(()=>{
-    fetch('http://localhost:5000/revew')
+    fetch('https://thawing-brushlands-77698.herokuapp.com/revew')
     .then(res=>res.json())
     .then(data=>{
       setProducts(data);

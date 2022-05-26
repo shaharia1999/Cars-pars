@@ -24,7 +24,7 @@ const UserRevew = () => {
     // setData(newAreey);
   
   if(revew <=5 ){
-    fetch('http://localhost:5000/revew', {
+    fetch('https://thawing-brushlands-77698.herokuapp.com/revew', {
         method: 'POST',
         body: JSON.stringify(datas
         ),
