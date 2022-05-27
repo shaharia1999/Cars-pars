@@ -4,7 +4,7 @@ import { useState,useEffect } from 'react';
 const ManageAllOrders = () => {
     const [orders,setOrder]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/ordersItem')
+        fetch('https://thawing-brushlands-77698.herokuapp.com/ordersItem')
         .then(res=>res.json())
         .then(data=>setOrder(data));
        
@@ -29,7 +29,7 @@ const ManageAllOrders = () => {
              {
                 orders.map(order=>
                     <tr>
-                       {/* name,email,address,mobile,MinimumOrder,price,picture */}
+                     
                        
                          <td>{order.name}</td>
                          <td>{order.email}</td>

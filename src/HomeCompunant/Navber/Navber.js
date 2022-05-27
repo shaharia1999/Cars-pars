@@ -61,9 +61,6 @@ navbarScroll
 
     }
    
-   
-    
-    
     {
            user?.uid?
            <li><CustomLink onClick={singout} to='/' >Log Out</CustomLink></li>:

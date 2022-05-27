@@ -29,7 +29,7 @@ const AddItem = () => {
     // setData(newAreey);
   
 
-    fetch('https://thawing-brushlands-77698.herokuapp.com/products', {
+    fetch('https://thawing-brushlands-77698.herokuapp.com/product', {
   method: 'POST',
   body: JSON.stringify(datas
   ),
@@ -66,7 +66,7 @@ console.log(user?.email)
         <div className='mt-5 mb-5 Admin-addItem'>
           <ToastContainer className='mt-20'></ToastContainer>
         <h1 className='mt-5 text-center text-2xl'> Add Item</h1>
-        <Form onSubmit={handleSubmit} className=' mx-auto'>
+        <Form onSubmit={handleSubmit} className='w-50 mx-auto'>
     <Form.Group className="mb-3" >
     <Form.Label>Item Name : </Form.Label>
     <Form.Control type="text" placeholder="Enter Name" />

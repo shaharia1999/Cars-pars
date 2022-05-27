@@ -1,0 +1,226 @@
+#skill{
+    width:100%;
+    height:auto;
+    background-color:#000000d4;
+}
+#skill .container{
+    padding-top: 100px;
+    
+}
+#skill .container center{
+    color:white;
+    font-size: 2rem;
+    position: relative;
+}
+#skill .container center:before{
+    content: "";
+    position: absolute;
+    left:50%;
+    bottom:30px;
+    width: 180px;
+    height: 3px;
+    background-color:#CA003A;
+    transform: translateX(-50%);
+
+}
+#skill .container center:after{
+    content: "what i know";
+    font-size: 20px;
+    position: absolute;
+     left:50%;
+    bottom:25px;
+    height: 20px;
+    background:#2B2B2B;
+    z-index: 10000;
+    transform: translateX(-50%);;
+
+}
+.skill-div1{
+    color:white;
+    margin-top: 50PX;
+    padding-bottom: 40px;
+
+   
+}
+.skill-div1 h2{
+    padding-bottom:40px;
+
+
+}
+.skill-div1 p{
+    line-height: 20px;
+    font-size: 1.5rem;
+
+    
+}
+.skill-div1 button{
+    width: 150px;
+    color:white;
+    text-align: center;
+    border-radius:30px;
+    background-color: #CA003A;
+    height: 40px;
+    margin-top:30px;
+
+}
+.skill-div2{
+   height:500px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-flow:column;
+  
+
+}
+.skill-div2 ul {
+margin-top:20px;
+margin-left: 5px;
+text-decoration: none;
+font-style: none;
+}
+.skill-div2 ul li{
+text-decoration: none!important;
+color:white;
+margin-top: 20px;
+font-size:1rem;
+list-style: none;
+position:relative;
+z-index:10;
+}
+.skill-div2 ul li:before{
+  content:"";
+  position:absolute;
+  top:10px;
+  left:100px;
+  width:70%;
+  height:15px;
+  background-color:white;
+}
+.skill-div2 ul >li:nth-child(1)::after{
+content:"";
+position:absolute;
+top:10px;
+left:100px;
+width:0;
+height:15px;
+background-color:#CA003A;
+animation-name:anima1;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+animation-timing-function: ease-in-out;
+}
+.skill-div2 ul >li:nth-child(2)::after{
+content:"";
+position:absolute;
+top:10px;
+left:100px;
+width:0;
+height:15px;
+background-color:#CA003A;
+animation-name:anima2;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+animation-timing-function: ease-in-out;
+}
+.skill-div2 ul >li:nth-child(3)::after{
+content:"";
+position:absolute;
+top:10px;
+left:100px;
+width:0;
+height:15px;
+background-color:#CA003A;
+animation-name:anima3;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+animation-timing-function: ease-in-out;
+}
+.skill-div2 ul >li:nth-child(4)::after{
+content:"";
+position:absolute;
+top:10px;
+left:100px;
+width:0;
+height:15px;
+background-color:#CA003A;
+animation-name:anima4;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+animation-timing-function: ease-in-out;
+}
+.skill-div2 ul >li:nth-child(5)::after{
+content:"";
+position:absolute;
+top:10px;
+left:100px;
+width:0;
+height:15px;
+background-color:#CA003A;
+animation-name:anima5;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+animation-timing-function: ease-in-out;
+}
+.skill-div2 ul >li:nth-child(6)::after{
+content:"";
+position:absolute;
+top:10px;
+left:100px;
+width:0;
+height:15px;
+background-color:#CA003A;
+animation-name:anima6;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+animation-timing-function: ease-in-out;
+}
+@keyframes anima1{
+0%{width:0;}
+100%{width:60%}
+}
+@keyframes anima2{
+0%{width:0;}
+100%{width:50%}
+}
+@keyframes anima3{
+    0%{width:0;}
+    100%{width:50%}
+    }
+    @keyframes anima4{
+        0%{width:0;}
+        100%{width:30%}
+        }
+        @keyframes anima5{
+            0%{width:0;}
+            100%{width:20%}
+            }
+            @keyframes anima6{
+                0%{width:0;}
+                100%{width:35%}
+                }
+@media (max-width:974px){
+#skill .container center{
+    color:white;
+    font-size: 3rem;
+    position: relative;
+}
+#skill .container center:after{
+    font-size: 16px;
+}
+.skill-div1 h2{
+    font-size:2.5rem;
+    padding-bottom: 10px;
+}
+.skill-div1 p{
+    font-size: 14px;
+}
+.skill-div1 button{
+      width:100px ;
+      border: none;
+}
+}    

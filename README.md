@@ -1,6 +1,6 @@
-# Cars
+# Cars Parts
 
-live link ---- [];
+live link ---- [https://cars-parts-11bbb.firebaseapp.com/];
 
 # Bullet line
 Markup :
@@ -19,6 +19,7 @@ Markup :
 # UseEs Resource 
 * React Router
 * React Bootstrap
+* stripe js
 * React Toast 
 * FireBase 
 * FireBasee Hooks

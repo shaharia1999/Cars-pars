@@ -12,7 +12,7 @@ const PerUsr = ({u}) => {
     
     
     const makeAdmin=()=>{
-        fetch(`http://localhost:5000/admin/${email}`,{
+        fetch(`https://thawing-brushlands-77698.herokuapp.com/admin/${email}`,{
             method:'PUT',
                 })
             .then(res=>res.json())
@@ -22,7 +22,7 @@ const PerUsr = ({u}) => {
       
     }
     const Delete=()=>{
-        fetch(`http://localhost:5000/admin/${_id}`,{
+        fetch(`https://thawing-brushlands-77698.herokuapp.com/${_id}`,{
             method:'DELETE',
                 })
             .then(res=>res.json())

@@ -6,6 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../firebase.init';
 import axios from 'axios';
+import Loading from '../Loading/Loading';
 
 // import { toast } from "react-toastify";
  
@@ -17,23 +18,27 @@ import axios from 'axios';
 
 const MyProfile = () => {
     const [user, loading, error] = useAuthState(auth);
+
     const [eroor,setError]=useState('');
    
     const setEmail=user?.email;
     const {_id}=useParams()
     const [products,setProducts]=useState([]);
+    console.log(products);
+    if(loading){
+      <Loading></Loading>
+    }
     useEffect(()=>{
-        fetch('http://localhost:5000/profile')
+        fetch('https://thawing-brushlands-77698.herokuapp.com/profile')
         .then(res=>res.json())
         .then(data=>setProducts(data));
        
     },[]);
-       const pro=products.find(u=>u.email===setEmail);
-       console.log(pro);
-
+  
+     
 
   const fromControl= async(e)=>{
-    const notify = () => toast("Set Your New Password!");
+    const notify = () => toast("Profile update sucess!");
       e.preventDefault()
      const name=e.target[0].value;
      const picture=e.target[1].value;
@@ -43,14 +48,13 @@ const MyProfile = () => {
      const profiles={name,email,address,mobile,picture}
      setProducts(profiles);
      console.log(products)
-     const response= await axios.put(`http://localhost:5000/profile/${setEmail}`,profiles);
+     const response= await axios.put(`https://thawing-brushlands-77698.herokuapp.com/profile/${setEmail}`,profiles);
      if (response) {
-        alert("Order Submit Sucessfull")
         e.target.reset();}
     }
-
-        
-  
+    
+    const pro=products?.find(u=>u?.email===setEmail);
+    console.log(pro);
 //   useEffect(()=>{
 //     fetch(`http://localhost:5000/user/${setEmail}`, {
 //         method: 'PUT',
@@ -101,7 +105,7 @@ const MyProfile = () => {
     <h1 className='mt-5 text-center text-4xl'>Profile</h1>
     <Form onSubmit={fromControl} className='ml-10 '>
 <Form.Group className="mb-3 " >
-<Form.Label> Product Name  : </Form.Label>
+<Form.Label>  Name  : </Form.Label>
 <Form.Control type="text" placeholder="Name"  />
 
 
