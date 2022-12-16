@@ -81,15 +81,7 @@ const CheckoutForm = ({data,setPayment}) => {
         //     orderId: _id,
         //     transactionId: paymentIntent.id
         // }
-        // fetch(`http://localhost:5000/order/${_id}`,{
-        //     method: 'PATCH',
-        //     body: JSON.stringify(payment)
-        // }).then(res=>res.json())
-        // .then(data => {
-        //     setProcessing(false);
-        //     console.log(data);
-        // })
-
+    
         // }
     }
     return (
