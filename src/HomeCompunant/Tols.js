@@ -6,7 +6,7 @@ import ProductItem from './ProductItem';
 const Tols = () => {
   const [products,setProducts]=useState([])
   useEffect(()=>{
-    fetch('https://thawing-brushlands-77698.herokuapp.com/products')
+    fetch('https://randercar.onrender.com/products')
     .then(res=>res.json())
     .then(data=>setProducts(data))
 },[]);
