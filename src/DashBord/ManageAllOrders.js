@@ -4,7 +4,7 @@ import { useState,useEffect } from 'react';
 const ManageAllOrders = () => {
     const [orders,setOrder]=useState([]);
     useEffect(()=>{
-        fetch('https://thawing-brushlands-77698.herokuapp.com/ordersItem')
+        fetch('https://randercar.onrender.com/ordersItem')
         .then(res=>res.json())
         .then(data=>setOrder(data));
        

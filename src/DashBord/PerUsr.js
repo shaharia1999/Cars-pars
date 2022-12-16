@@ -12,7 +12,7 @@ const PerUsr = ({u}) => {
     
     
     const makeAdmin=()=>{
-        fetch(`https://thawing-brushlands-77698.herokuapp.com/admin/${email}`,{
+        fetch(`https://randercar.onrender.com/admin/${email}`,{
             method:'PUT',
                 })
             .then(res=>res.json())

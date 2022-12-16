@@ -19,7 +19,7 @@ const Order = () => {
     const {_id}=useParams()
     const [products,setProducts]=useState([])
     useEffect(()=>{
-      fetch('https://thawing-brushlands-77698.herokuapp.com/products')
+      fetch('https://randercar.onrender.com/products')
       .then(res=>res.json())
       .then(data=>setProducts(data))
   },[]);
@@ -55,7 +55,7 @@ const Order = () => {
        const product={name,email,address,mobile,MinimumOrder,price,picture}
         if(quantitylev>=MinimumOrder && MinimumOrder>=MinimumValue){
           try{
-            const response= await axios.post('https://thawing-brushlands-77698.herokuapp.com/products',product);
+            const response= await axios.post('https://randercar.onrender.com/products',product);
             
             if (response) {
               alert("Order Submit Sucessfull")

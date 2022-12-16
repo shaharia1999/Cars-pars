@@ -29,7 +29,7 @@ const MyProfile = () => {
       <Loading></Loading>
     }
     useEffect(()=>{
-        fetch('https://thawing-brushlands-77698.herokuapp.com/profile')
+        fetch('https://randercar.onrender.com/profile')
         .then(res=>res.json())
         .then(data=>setProducts(data));
        
@@ -48,7 +48,7 @@ const MyProfile = () => {
      const profiles={name,email,address,mobile,picture}
      setProducts(profiles);
      console.log(products)
-     const response= await axios.put(`https://thawing-brushlands-77698.herokuapp.com/profile/${setEmail}`,profiles);
+     const response= await axios.put(`https://randercar.onrender.com/profile/${setEmail}`,profiles);
      if (response) {
         e.target.reset();}
     }

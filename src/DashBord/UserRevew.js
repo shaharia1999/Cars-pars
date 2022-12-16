@@ -24,7 +24,7 @@ const UserRevew = () => {
     // setData(newAreey);
   
   if(revew <=5 ){
-    fetch('https://thawing-brushlands-77698.herokuapp.com/revew', {
+    fetch('https://randercar.onrender.com/revew', {
         method: 'POST',
         body: JSON.stringify(datas
         ),

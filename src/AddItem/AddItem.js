@@ -29,7 +29,7 @@ const AddItem = () => {
     // setData(newAreey);
   
 
-    fetch('https://thawing-brushlands-77698.herokuapp.com/product', {
+    fetch('https://randercar.onrender.com/product', {
   method: 'POST',
   body: JSON.stringify(datas
   ),

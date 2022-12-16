@@ -14,7 +14,7 @@ import {CardElement, Elements, ElementsConsumer} from '@stripe/react-stripe-js';
 const Payment = () => {
     const {_id}=useParams();
     const [data,setData]=useState({})
-    const url=`https://thawing-brushlands-77698.herokuapp.com/payment/${_id}`;
+    const url=`https://randercar.onrender.com/payment/${_id}`;
     // const {data,isLoading}=useQuery('order',()=>{
       useEffect(()=>{
         fetch(url).then(res=>res.json()).then(data=>setData(data))

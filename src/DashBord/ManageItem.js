@@ -4,14 +4,14 @@ import ManagePerItem from './ManagePerItem';
 const ManageItem = () => {
     const [products,setProducts]=useState([])
     useEffect(()=>{
-      fetch('https://thawing-brushlands-77698.herokuapp.com/products')
+      fetch('https://randercar.onrender.com/products')
       .then(res=>res.json())
       .then(data=>setProducts(data))
   },[]);
 
   
       const deleteItem=(_id)=>{
-        const url=`https://thawing-brushlands-77698.herokuapp.com/serviceDelete/${_id}`
+        const url=`https://randercar.onrender.com/serviceDelete/${_id}`
         const prosit=window.confirm("Are You sure You want to Delete the Id")
         if(prosit){
         fetch(url,{

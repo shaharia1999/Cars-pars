@@ -15,7 +15,7 @@ const CheckoutForm = ({data,setPayment}) => {
     const email=data?.email;
     const _id=data?._id;
     useEffect(() => {
-        fetch('https://thawing-brushlands-77698.herokuapp.com/create-payment-intent', {
+        fetch('https://randercar.onrender.com/create-payment-intent', {
             method: 'POST',
             headers:{
                 'content-type':'application/json'
