@@ -2,6 +2,9 @@
 
 live link ---- [https://cars-parts-11bbb.firebaseapp.com/];
 
+## admin email = adeptshaharia@gmail.com
+## admin  pass = 123456
+
 # Bullet line
 Markup :
 * Header
